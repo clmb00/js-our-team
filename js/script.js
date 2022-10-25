@@ -24,8 +24,10 @@ const teamMembers = [
     role: 'Graphic Designer',
     photo: 'barbara-ramos-graphic-designer.jpg'
   }
-]
+];
 
 for(let teamMember of teamMembers){
-  console.log(teamMember);
+  let parag = document.createElement('p');
+  parag.innerText = `Name: ${teamMember.name}, Role: ${teamMember.role}, URL photo: ${teamMember.photo}`;
+  document.querySelector('body').append(parag);
 }
