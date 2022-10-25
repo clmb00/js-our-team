@@ -25,3 +25,7 @@ const teamMembers = [
     photo: 'barbara-ramos-graphic-designer.jpg'
   }
 ]
+
+for(let teamMember of teamMembers){
+  console.log(teamMember);
+}
