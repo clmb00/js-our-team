@@ -1,0 +1,31 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: ;
+  color: #333333;
+  background-color: #eeeeee;
+}
+
+.card{
+  cursor: pointer;
+  background-color: white;
+  min-width: 280px;
+  max-width: 320px;
+  height: 390px;
+}
+
+.card .img-container{
+  height: 300px;
+  overflow: hidden;
+}
+
+.card img{
+  transition: all 1s ease;
+}
+
+.card img:hover{
+  transform: scale(1.05);
+}
+
+h2{
+  color: #555555;
+}

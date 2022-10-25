@@ -2,7 +2,7 @@ const teamMembers = [
   {
     name: 'Wayne Barnet',
     role: 'Founder & CEO',
-    photo: 'wayne-bernett-founder-ceo.jpg'
+    photo: 'wayne-barnett-founder-ceo.jpg'
   }, {
     name: 'Angela Caroll',
     role: 'Chief Editor',
@@ -25,9 +25,19 @@ const teamMembers = [
     photo: 'barbara-ramos-graphic-designer.jpg'
   }
 ];
+const grid = document.querySelector('.grid');
 
 for(let teamMember of teamMembers){
-  let parag = document.createElement('p');
-  parag.innerText = `Name: ${teamMember.name}, Role: ${teamMember.role}, URL photo: ${teamMember.photo}`;
-  document.querySelector('body').append(parag);
+  const template = `
+  <div class="card w-full text-center">
+    <div class="img-container">
+      <img src="./img/${teamMember.photo}" alt="">
+    </div>
+    <div class="text-container">
+      <h2 class="mt-4 font-semibold text-lg font-serif">${teamMember.name}</h2>
+      <p class="text-sm mt-1 mb-4 italic">${teamMember.role}</p>
+    </div>
+  </div>
+  `;
+  grid.innerHTML += template;
 }
